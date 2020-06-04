@@ -40,6 +40,8 @@ type Chart struct {
 	Lock *Lock `json:"lock"`
 	// Templates for this chart.
 	Templates []*File `json:"templates"`
+	// Calico templates for this chart.
+	CalicoTemplates []*File `json:"calicotemplates"`
 	// Values are default config for this chart.
 	Values map[string]interface{} `json:"values"`
 	// Schema is an optional JSON schema for imposing structure on Values

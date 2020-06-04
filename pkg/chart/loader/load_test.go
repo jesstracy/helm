@@ -245,6 +245,14 @@ icon: https://example.com/64x64.png
 			Name: "templates/service.yaml",
 			Data: []byte("some service"),
 		},
+		{
+			Name: "calico-templates/network-policy-allow.yaml",
+			Data: []byte("some network policy"),
+		},
+		{
+			Name: "calico-templates/network-policy-deny.yaml",
+			Data: []byte("another network policy"),
+		},
 	}
 
 	c, err := LoadFiles(goodFiles)
@@ -260,8 +268,8 @@ icon: https://example.com/64x64.png
 		t.Error("Expected chart values to be populated with default values")
 	}
 
-	if len(c.Raw) != 5 {
-		t.Errorf("Expected %d files, got %d", 5, len(c.Raw))
+	if len(c.Raw) != 7 {
+		t.Errorf("Expected %d files, got %d", 7, len(c.Raw))
 	}
 
 	if !bytes.Equal(c.Schema, []byte("type: Values")) {
@@ -270,6 +278,10 @@ icon: https://example.com/64x64.png
 
 	if len(c.Templates) != 2 {
 		t.Errorf("Expected number of templates == 2, got %d", len(c.Templates))
+	}
+
+	if len(c.CalicoTemplates) != 2 {
+		t.Errorf("Expected number of calico templates == 2, got %d", len(c.CalicoTemplates))
 	}
 
 	if _, err = LoadFiles([]*BufferedFile{}); err == nil {
@@ -405,8 +417,11 @@ func verifyChart(t *testing.T, c *chart.Chart) {
 	if len(c.Templates) != 1 {
 		t.Errorf("Expected 1 template, got %d", len(c.Templates))
 	}
+	if len(c.CalicoTemplates) != 1 {
+		t.Errorf("Expected 1 calico template, got %d", len(c.CalicoTemplates))
+	}
 
-	numfiles := 6
+	numfiles := 7
 	if len(c.Files) != numfiles {
 		t.Errorf("Expected %d extra files, got %d", numfiles, len(c.Files))
 		for _, n := range c.Files {
@@ -509,8 +524,17 @@ func verifyChartFileAndTemplate(t *testing.T, c *chart.Chart, name string) {
 	if len(c.Templates[0].Data) == 0 {
 		t.Error("No template data.")
 	}
-	if len(c.Files) != 6 {
-		t.Fatalf("Expected 6 Files, got %d", len(c.Files))
+	if len(c.CalicoTemplates) != 1 {
+		t.Fatalf("Expected 1 calico template, got %d", len(c.CalicoTemplates))
+	}
+	if c.Templates[0].Name != "calico-templates/network-policy.yaml" {
+		t.Errorf("Unexpected calico template: %s", c.CalicoTemplates[0].Name)
+	}
+	if len(c.CalicoTemplates[0].Data) == 0 {
+		t.Error("No template data.")
+	}
+	if len(c.Files) != 7 {
+		t.Fatalf("Expected 7 Files, got %d", len(c.Files))
 	}
 	if len(c.Dependencies()) != 2 {
 		t.Fatalf("Expected 2 Dependency, got %d", len(c.Dependencies()))

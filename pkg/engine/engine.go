@@ -64,6 +64,7 @@ type Engine struct {
 // section contains a value named "bar", that value will be passed on to the
 // bar chart during render time.
 func (e Engine) Render(chrt *chart.Chart, values chartutil.Values) (map[string]string, error) {
+	fmt.Println("this is where I make the map of templates using the chart and the values!!")
 	tmap := allTemplates(chrt, values)
 	return e.render(tmap)
 }
@@ -190,6 +191,7 @@ func (e Engine) render(tpls map[string]renderable) (map[string]string, error) {
 // renderWithReferences takes a map of templates/values to render, and a map of
 // templates which can be referenced within them.
 func (e Engine) renderWithReferences(tpls, referenceTpls map[string]renderable) (rendered map[string]string, err error) {
+	fmt.Println("this is where I render things, but tpls are passed in, and right now those don't include calico templates")
 	// Basically, what we do here is start with an empty parent template and then
 	// build up a list of templates -- one for each file. Once all of the templates
 	// have been parsed, we loop through again and execute every template.
@@ -335,6 +337,7 @@ func allTemplates(c *chart.Chart, vals chartutil.Values) map[string]renderable {
 // As it recurses, it also sets the values to be appropriate for the template
 // scope.
 func recAllTpls(c *chart.Chart, templates map[string]renderable, vals chartutil.Values) {
+	fmt.Println("in recAllTpls, constructing from chart and values") // TODO
 	next := map[string]interface{}{
 		"Chart":        c.Metadata,
 		"Files":        newFiles(c.Files),
@@ -358,12 +361,24 @@ func recAllTpls(c *chart.Chart, templates map[string]renderable, vals chartutil.
 	newParentID := c.ChartFullPath()
 	for _, t := range c.Templates {
 		if !isTemplateValid(c, t.Name) {
+			fmt.Println("template wasn't valid:", t.Name)
 			continue
 		}
 		templates[path.Join(newParentID, t.Name)] = renderable{
 			tpl:      string(t.Data),
 			vals:     next,
 			basePath: path.Join(newParentID, "templates"),
+		}
+	}
+	for _, t := range c.CalicoTemplates {
+		if !isTemplateValid(c, t.Name) {
+			fmt.Println("calico template wasn't valid:", t.Name)
+			continue
+		}
+		templates[path.Join(newParentID, t.Name)] = renderable{
+			tpl:      string(t.Data),
+			vals:     next,
+			basePath: path.Join(newParentID, "calico-templates"),
 		}
 	}
 }

@@ -1,0 +1,283 @@
+I AM LOADING FILES
+Loading a calico-template!
+I AM LOADING FILES
+I AM LOADING FILES
+Here is chart's calico templates:
+I AM LOADING FILES
+Here is chart's calico templates:
+Here is chart's calico templates:
+Here is chart's calico templates:
+{calico-templates/network-policy.yaml [45 45 45 10 97 112 105 86 101 114 115 105 111 110 58 32 112 114 111 106 101 99 116 99 97 108 105 99 111 46 111 114 103 47 118 51 10 107 105 110 100 58 32 78 101 116 119 111 114 107 80 111 108 105 99 121 10 109 101 116 97 100 97 116 97 58 10 32 32 110 97 109 101 58 32 123 123 32 46 82 101 108 101 97 115 101 46 78 97 109 101 32 125 125 45 99 104 101 99 107 121 45 49 45 97 108 108 111 119 45 100 110 115 45 101 103 114 101 115 115 10 32 32 110 97 109 101 115 112 97 99 101 58 32 123 123 32 46 82 101 108 101 97 115 101 46 78 97 109 101 115 112 97 99 101 32 125 125 10 115 112 101 99 58 10 32 32 111 114 100 101 114 58 32 49 48 10 32 32 115 101 108 101 99 116 111 114 58 32 97 112 112 46 107 117 98 101 114 110 101 116 101 115 46 105 111 47 105 110 115 116 97 110 99 101 32 61 61 32 34 123 123 32 46 82 101 108 101 97 115 101 46 78 97 109 101 32 125 125 34 10 32 32 116 121 112 101 115 58 10 32 32 32 32 45 32 69 103 114 101 115 115 10 32 32 101 103 114 101 115 115 58 10 32 32 32 32 45 32 97 99 116 105 111 110 58 32 65 108 108 111 119 10 32 32 32 32 32 32 100 101 115 116 105 110 97 116 105 111 110 58 10 32 32 32 32 32 32 32 32 110 101 116 115 58 10 32 32 32 32 32 32 32 32 32 32 45 32 123 123 32 46 86 97 108 117 101 115 46 110 101 116 119 111 114 107 80 111 108 105 99 121 46 118 112 99 68 110 115 83 101 114 118 101 114 32 125 125 47 51 50 10 45 45 45 10 97 112 105 86 101 114 115 105 111 110 58 32 112 114 111 106 101 99 116 99 97 108 105 99 111 46 111 114 103 47 118 51 10 107 105 110 100 58 32 78 101 116 119 111 114 107 80 111 108 105 99 121 10 109 101 116 97 100 97 116 97 58 10 32 32 110 97 109 101 58 32 123 123 32 46 82 101 108 101 97 115 101 46 78 97 109 101 32 125 125 45 99 104 101 99 107 121 45 50 45 100 101 110 121 45 108 111 99 97 108 45 101 103 114 101 115 115 10 32 32 110 97 109 101 115 112 97 99 101 58 32 123 123 32 46 82 101 108 101 97 115 101 46 78 97 109 101 115 112 97 99 101 32 125 125 10 115 112 101 99 58 10 32 32 111 114 100 101 114 58 32 50 48 10 32 32 115 101 108 101 99 116 111 114 58 32 97 112 112 46 107 117 98 101 114 110 101 116 101 115 46 105 111 47 105 110 115 116 97 110 99 101 32 61 61 32 34 123 123 32 46 82 101 108 101 97 115 101 46 78 97 109 101 32 125 125 34 10 32 32 116 121 112 101 115 58 10 32 32 32 32 45 32 69 103 114 101 115 115 10 32 32 101 103 114 101 115 115 58 10 32 32 32 32 45 32 97 99 116 105 111 110 58 32 68 101 110 121 10 32 32 32 32 32 32 100 101 115 116 105 110 97 116 105 111 110 58 10 32 32 32 32 32 32 32 32 110 101 116 115 58 10 32 32 32 32 32 32 32 32 32 32 45 32 49 48 46 48 46 48 46 48 47 56 10 45 45 45 10 97 112 105 86 101 114 115 105 111 110 58 32 112 114 111 106 101 99 116 99 97 108 105 99 111 46 111 114 103 47 118 51 10 107 105 110 100 58 32 78 101 116 119 111 114 107 80 111 108 105 99 121 10 109 101 116 97 100 97 116 97 58 10 32 32 110 97 109 101 58 32 123 123 32 46 82 101 108 101 97 115 101 46 78 97 109 101 32 125 125 45 99 104 101 99 107 121 45 51 45 97 108 108 111 119 45 111 117 116 115 105 100 101 45 101 103 114 101 115 115 10 32 32 110 97 109 101 115 112 97 99 101 58 32 123 123 32 46 82 101 108 101 97 115 101 46 78 97 109 101 115 112 97 99 101 32 125 125 10 115 112 101 99 58 10 32 32 111 114 100 101 114 58 32 51 48 10 32 32 115 101 108 101 99 116 111 114 58 32 97 112 112 46 107 117 98 101 114 110 101 116 101 115 46 105 111 47 105 110 115 116 97 110 99 101 32 61 61 32 34 123 123 32 46 82 101 108 101 97 115 101 46 78 97 109 101 32 125 125 34 10 32 32 116 121 112 101 115 58 10 32 32 32 32 45 32 69 103 114 101 115 115 10 32 32 101 103 114 101 115 115 58 10 32 32 32 32 45 32 97 99 116 105 111 110 58 32 65 108 108 111 119 10 10 10]}
+I am rendering resources!!!
+In render
+this is where I make the map of templates using the chart and the values!!
+in recAllTpls, constructing from chart and values
+in recAllTpls, constructing from chart and values
+this is where I render things, but tpls are passed in, and right now those don't include calico templates
+this is where I render things, but tpls are passed in, and right now those don't include calico templates
+this is where I render things, but tpls are passed in, and right now those don't include calico templates
+this is where I render things, but tpls are passed in, and right now those don't include calico templates
+this is where I render things, but tpls are passed in, and right now those don't include calico templates
+this is where I render things, but tpls are passed in, and right now those don't include calico templates
+this is where I render things, but tpls are passed in, and right now those don't include calico templates
+this is where I render things, but tpls are passed in, and right now those don't include calico templates
+this is where I render things, but tpls are passed in, and right now those don't include calico templates
+this is where I render things, but tpls are passed in, and right now those don't include calico templates
+this is where I render things, but tpls are passed in, and right now those don't include calico templates
+---
+# Source: checky/calico-templates/network-policy.yaml
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: checc-checky-1-allow-dns-egress
+  namespace: default
+spec:
+  order: 10
+  selector: app.kubernetes.io/instance == "checc"
+  types:
+    - Egress
+  egress:
+    - action: Allow
+      destination:
+        nets:
+          - 10.6.0.2/32
+---
+# Source: checky/calico-templates/network-policy.yaml
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: checc-checky-2-deny-local-egress
+  namespace: default
+spec:
+  order: 20
+  selector: app.kubernetes.io/instance == "checc"
+  types:
+    - Egress
+  egress:
+    - action: Deny
+      destination:
+        nets:
+          - 10.0.0.0/8
+---
+# Source: checky/calico-templates/network-policy.yaml
+apiVersion: projectcalico.org/v3
+kind: NetworkPolicy
+metadata:
+  name: checc-checky-3-allow-outside-egress
+  namespace: default
+spec:
+  order: 30
+  selector: app.kubernetes.io/instance == "checc"
+  types:
+    - Egress
+  egress:
+    - action: Allow
+---
+# Source: checky/charts/chassis/templates/app-config.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: checc-checky
+data:
+  BASE_HOST: "checky.mkube"
+  POSTGRES_PORT: "5432"
+  RAILS_ENV: "development"
+  REDIS_PORT: "6379"
+  WAIT_FOR_INIT: "true"
+---
+# Source: checky/charts/chassis/templates/services.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: checc-checky-web-brick
+  labels:
+    app.kubernetes.io/name: checky
+    helm.sh/chart: chassis-0.3.4
+    app.kubernetes.io/instance: checc
+    release: checc
+    app.kubernetes.io/version: "1.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      nodePort: 
+      targetPort: 8000
+      name: http
+  selector:
+    app.kubernetes.io/name: checky-web-brick
+    app.kubernetes.io/instance: checc
+---
+# Source: checky/charts/chassis/templates/web-deployments.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: checc-checky-web-brick
+  labels:
+    app.kubernetes.io/name: checky
+    helm.sh/chart: chassis-0.3.4
+    app.kubernetes.io/instance: checc
+    release: checc
+    app.kubernetes.io/version: "1.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: checky-web-brick
+      app.kubernetes.io/instance: checc
+      release: checc
+  template:
+    metadata:
+      annotations:
+        checksum/config: 65da941ce2010fd5c1c0c7dd40ad9c8883ad685992dfa68f294ee491c99c3607
+      labels:
+        app.kubernetes.io/name: checky-web-brick
+        app.kubernetes.io/instance: checc
+        release: checc
+    spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 90
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app.kubernetes.io/name
+                  operator: In
+                  values:
+                  - checky-web-brick
+                - key: app.kubernetes.io/instance
+                  operator: In
+                  values:
+                  - checc
+              topologyKey: "kubernetes.io/hostname"
+      initContainers:
+        - name: chassis-init
+          command: ["./init.sh"]
+          image: "831096501748.dkr.ecr.us-east-1.amazonaws.com/checky:latest"
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: checc-checky
+          env:
+            - name: DD_AGENT_HOST
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+          
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "450Mi"
+            limits:
+              cpu: "500m"
+              memory: "450Mi"
+          
+      containers:
+        - name: chassis-web-brick
+          command: ["./entrypoint.sh","bundle","exec","rails","server","-p","8000","-b","0.0.0.0"]
+          image: "831096501748.dkr.ecr.us-east-1.amazonaws.com/checky:latest"
+          imagePullPolicy: Always
+          envFrom:
+            - configMapRef:
+                name: checc-checky
+          env:
+            - name: DD_AGENT_HOST
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+          
+          ports:
+            - containerPort: 8000
+          livenessProbe:
+            httpGet:
+              path: /health-check
+              port: 8000
+            initialDelaySeconds: 30
+            periodSeconds: 30
+          readinessProbe:
+            httpGet:
+              path: /health-check
+              port: 8000
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "450Mi"
+            limits:
+              cpu: "500m"
+              memory: "450Mi"
+          
+      dnsPolicy: Default
+---
+# Source: checky/charts/chassis/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: checc-checky-web-brick
+  labels:
+    app.kubernetes.io/name: checky
+    helm.sh/chart: chassis-0.3.4
+    app.kubernetes.io/instance: checc
+    release: checc
+    app.kubernetes.io/version: "1.0"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    kubernetes.io/ingress.class: nginx-internet
+spec:
+  tls:
+  - hosts:
+    - "checky.mkube"
+    secretName: default-wildcard-certificate-tls
+  rules:
+    - host: "checky.mkube"
+      http:
+        paths:
+          - backend:
+              serviceName: checc-checky-web-brick
+              servicePort: http
+---
+# Source: checky/charts/chassis/templates/secrets.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: checc-checky-postgresql-credentials
+  annotations:
+    "helm.sh/hook": "pre-install"
+    "helm.sh/hook-delete-policy": "before-hook-creation"
+data:
+  postgresql-password: "SG4xSk1vcGUwa2JnU0VNR0JZVjhCUmdx"
+---
+# Source: checky/charts/chassis/templates/secrets.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: checc-checky-redis-credentials
+  annotations:
+    "helm.sh/hook": "pre-install"
+    "helm.sh/hook-delete-policy": "before-hook-creation"
+  labels:
+data:
+  redis-password: "UHdxMXpjZ0JXMjJjRFlUam54ekpEVmJv"
+---
+# Source: checky/charts/chassis/templates/tests/test-connection.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "checc-checky-test-connection"
+  labels:
+    app.kubernetes.io/name: checky
+    helm.sh/chart: chassis-0.3.4
+    app.kubernetes.io/instance: checc
+    release: checc
+    app.kubernetes.io/version: "1.0"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget-web-brick
+      image: busybox
+      command: ['wget']
+      args:  ['checc-checky:80']
+  restartPolicy: Never

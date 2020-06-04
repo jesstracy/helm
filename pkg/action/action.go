@@ -98,6 +98,7 @@ type Configuration struct {
 //
 // TODO: This function is badly in need of a refactor.
 func (c *Configuration) renderResources(ch *chart.Chart, values chartutil.Values, releaseName, outputDir string, subNotes, useReleaseName, includeCrds bool, pr postrender.PostRenderer, dryRun bool) ([]*release.Hook, *bytes.Buffer, string, error) {
+	fmt.Println("I am rendering resources!!!")
 	hs := []*release.Hook{}
 	b := bytes.NewBuffer(nil)
 
@@ -125,8 +126,10 @@ func (c *Configuration) renderResources(ch *chart.Chart, values chartutil.Values
 		if err != nil {
 			return hs, b, "", err
 		}
+		fmt.Println("In renderWithClient")
 		files, err2 = engine.RenderWithClient(ch, values, rest)
 	} else {
+		fmt.Println("In render")
 		files, err2 = engine.Render(ch, values)
 	}
 
