@@ -421,7 +421,7 @@ func verifyChart(t *testing.T, c *chart.Chart) {
 		t.Errorf("Expected 1 calico template, got %d", len(c.CalicoTemplates))
 	}
 
-	numfiles := 7
+	numfiles := 6
 	if len(c.Files) != numfiles {
 		t.Errorf("Expected %d extra files, got %d", numfiles, len(c.Files))
 		for _, n := range c.Files {
@@ -525,16 +525,16 @@ func verifyChartFileAndTemplate(t *testing.T, c *chart.Chart, name string) {
 		t.Error("No template data.")
 	}
 	if len(c.CalicoTemplates) != 1 {
-		t.Fatalf("Expected 1 calico template, got %d", len(c.CalicoTemplates))
+		t.Fatalf("Expected 1 calico template, got %d. For %s", len(c.CalicoTemplates), c.Metadata.Name)
 	}
-	if c.Templates[0].Name != "calico-templates/network-policy.yaml" {
+	if c.CalicoTemplates[0].Name != "calico-templates/network-policy.yaml" {
 		t.Errorf("Unexpected calico template: %s", c.CalicoTemplates[0].Name)
 	}
 	if len(c.CalicoTemplates[0].Data) == 0 {
 		t.Error("No template data.")
 	}
-	if len(c.Files) != 7 {
-		t.Fatalf("Expected 7 Files, got %d", len(c.Files))
+	if len(c.Files) != 6 {
+		t.Fatalf("Expected 6 Files, got %d", len(c.Files))
 	}
 	if len(c.Dependencies()) != 2 {
 		t.Fatalf("Expected 2 Dependency, got %d", len(c.Dependencies()))
