@@ -124,11 +124,12 @@ func ReadValuesFile(filename string) (Values, error) {
 // ReleaseOptions represents the additional release options needed
 // for the composition of the final values struct
 type ReleaseOptions struct {
-	Name      string
-	Namespace string
-	Revision  int
-	IsUpgrade bool
-	IsInstall bool
+	Name           string
+	Namespace      string
+	Revision       int
+	IsUpgrade      bool
+	IsInstall      bool
+	TemplateCalico bool
 }
 
 // ToRenderValues composes the struct from the data coming from the Releases, Charts and Values files
@@ -146,6 +147,7 @@ func ToRenderValues(chrt *chart.Chart, chrtVals map[string]interface{}, options 
 			"Namespace": options.Namespace,
 			"IsUpgrade": options.IsUpgrade,
 			"IsInstall": options.IsInstall,
+			"TemplateCalico": options.TemplateCalico,
 			"Revision":  options.Revision,
 			"Service":   "Helm",
 		},

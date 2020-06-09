@@ -18,7 +18,6 @@ package loader
 
 import (
 	"bytes"
-	"fmt"
 	"log"
 	"os"
 	"path/filepath"
@@ -71,7 +70,6 @@ type BufferedFile struct {
 
 // LoadFiles loads from in-memory files.
 func LoadFiles(files []*BufferedFile) (*chart.Chart, error) {
-	fmt.Println("I AM LOADING FILES")
 	c := new(chart.Chart)
 	subcharts := make(map[string][]*BufferedFile)
 
@@ -132,7 +130,6 @@ func LoadFiles(files []*BufferedFile) (*chart.Chart, error) {
 		case strings.HasPrefix(f.Name, "templates/"):
 			c.Templates = append(c.Templates, &chart.File{Name: f.Name, Data: f.Data})
 		case strings.HasPrefix(f.Name, "calico-templates/"):
-			fmt.Println("Loading a calico-template!")
 			c.CalicoTemplates = append(c.CalicoTemplates, &chart.File{Name: f.Name, Data: f.Data})
 		case strings.HasPrefix(f.Name, "charts/"):
 			if filepath.Ext(f.Name) == ".prov" {
@@ -186,9 +183,5 @@ func LoadFiles(files []*BufferedFile) (*chart.Chart, error) {
 		c.AddDependency(sc)
 	}
 
-	fmt.Println("Here is chart's calico templates:")
-	for _, t := range c.CalicoTemplates {
-		fmt.Println(*t)
-	}
 	return c, nil
 }

@@ -144,6 +144,7 @@ func newTemplateCmd(cfg *action.Configuration, out io.Writer) *cobra.Command {
 	f := cmd.Flags()
 	addInstallFlags(f, client, valueOpts)
 	f.StringArrayVarP(&showFiles, "show-only", "s", []string{}, "only show manifests rendered from the given templates")
+	f.BoolVar(&client.TemplateCalico, "template-calico", false, "Only template calico files from calico-templates directory")
 	f.StringVar(&client.OutputDir, "output-dir", "", "writes the executed templates to files in output-dir instead of stdout")
 	f.BoolVar(&validate, "validate", false, "validate your manifests against the Kubernetes cluster you are currently pointing at. This is the same validation performed on an install")
 	f.BoolVar(&includeCrds, "include-crds", false, "include CRDs in the templated output")

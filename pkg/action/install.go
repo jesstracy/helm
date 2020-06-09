@@ -96,6 +96,8 @@ type Install struct {
 	APIVersions chartutil.VersionSet
 	// Used by helm template to render charts with .Release.IsUpgrade. Ignored if Dry-Run is false
 	IsUpgrade bool
+	// Used by helm template to only render templates in calico-templates dir
+	TemplateCalico bool
 	// Used by helm template to add the release as part of OutputDir path
 	// OutputDir/<ReleaseName>
 	UseReleaseName bool
@@ -227,6 +229,9 @@ func (i *Install) Run(chrt *chart.Chart, vals map[string]interface{}) (*release.
 		IsInstall: !isUpgrade,
 		IsUpgrade: isUpgrade,
 	}
+	// special case for helm template --template-calico
+	templateCalico := i.TemplateCalico && i.DryRun
+	options.TemplateCalico = templateCalico
 	valuesToRender, err := chartutil.ToRenderValues(chrt, vals, options, caps)
 	if err != nil {
 		return nil, err
